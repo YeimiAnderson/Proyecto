@@ -1,0 +1,78 @@
+/* reinicia algunos estilos por defecto */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* color en el fondo */
+body {
+    background-color: #636f93; 
+    font-family: Arial, sans-serif;
+    color: white;
+    
+}
+
+/* estilo del menu*/
+header {
+    background-color: white;
+    padding: 15px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FF5733; /* color del enlace */
+    font-weight: bold;
+}
+
+/* efecto hover para los elementos del menú */a
+.menu a:hover {
+    color: #FFF;
+    background-color: #FF5733; /* el color de fondo al pasar el mouse */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilo de el submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid #FF5733;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.contenedor {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+
+.footer-content {
+    background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+}
